@@ -1,0 +1,27 @@
+<script>
+  var myVar = setInterval(myTimer, 1000);
+
+  function myTimer() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML = t;
+  }
+  </script>
+<body>
+
+  <input type="datetime-local" id="myLocalDate" value="2014-11-16T15:25:33">
+
+  <p>Choose Day and Time to Begin Work</p>
+
+  <button onclick="myFunction()">CLOCK IN</button>
+
+  <p id="order-dashboard"></p>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLocalDate").value;
+    document.getElementById("order-dashboard").innerHTML = x;
+  }
+  </script>
+
+  </body>
